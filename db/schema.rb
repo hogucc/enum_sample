@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_23_072436) do
+ActiveRecord::Schema.define(version: 2021_05_23_094543) do
 
   create_table "pokemons", charset: "utf8", force: :cascade do |t|
     t.string "name"
-    t.column "type", "enum('fire','water','grass')"
+    t.column "type_name", "enum('fire','water','grass')"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
